@@ -1,4 +1,5 @@
 import React from "react"
+import Product from "./product.js"
 const productsJson = require("./../products.json")
 
 console.log("Products: (Remove this line in app.js!)", productsJson)
@@ -7,9 +8,26 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        Find me in src/app.js!
+      <div>
+        <h1>Produkter</h1>
+        <div className="App">
+
+          {productsJson.products.map((product) => {
+            return <Product title= {product.name}
+                            image={product.image}
+                            type={product.type}
+                            substance={product.substance}
+                            size={product.size}
+                            numberInPack={product.numberInPack}
+                            price={product.price}
+                            deliveryTime={product.deliveryTime}/>
+
+          })}
+
+        </div>
       </div>
+
+
     )
   }
 

@@ -1,5 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One|Permanent+Marker");
+
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-family: 'Permanent Marker';
+  font-family: 'Patua One';
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.App {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 0px 10px;
+
+}
+
+.product {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  width: calc(25% - 14px);
+  margin: 7px;
+}
+
+.priceAndBuyButton {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productImage {
+  object-fit: contain;
+  width: 100%;
+  height: 150px;
+  padding-bottom: 10px;
+
+}
+
+.deliveryTime {
+  font-size: 10px;
+  text-align: center;
+}
+
+button {
+  font-size: 15px;
+  height:50px;
+  width: 70px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .product {
+    width: calc(100% - 14px);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .product {
+    width: calc(50% - 14px);
+  }
 }
