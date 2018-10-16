@@ -26,6 +26,7 @@ p {
   flex-flow: row wrap;
   width: 100%;
   padding: 0px 10px;
+  margin-bottom: 50px;
 
 }
 
@@ -63,6 +64,8 @@ button {
   background-color: black;
   color: white;
   border-radius: 20px;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {

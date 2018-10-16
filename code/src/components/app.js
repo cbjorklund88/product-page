@@ -2,8 +2,6 @@ import React from "react"
 import Product from "./product.js"
 const productsJson = require("./../products.json")
 
-console.log("Products: (Remove this line in app.js!)", productsJson)
-
 class App extends React.Component {
 
   render() {
